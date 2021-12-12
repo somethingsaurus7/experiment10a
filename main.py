@@ -11,12 +11,12 @@ def on_forever():
         Green = Green + 10
     elif pins.digital_read_pin(DigitalPin.P8) == 1 and Green == 1020:
         Green = 0
-    if pins.digital_read_pin(DigitalPin.P8) == 1 and Red < 1020:
+    if pins.digital_read_pin(DigitalPin.P12) == 1 and Red < 1020:
         Red = Red + 10
-    elif pins.digital_read_pin(DigitalPin.P8) == 1 and Red == 1020:
+    elif pins.digital_read_pin(DigitalPin.P12) == 1 and Red == 1020:
         Red = 0
-    if pins.digital_read_pin(DigitalPin.P8) == 1 and Blue < 1020:
+    if pins.digital_read_pin(DigitalPin.P16) == 1 and Blue < 1020:
         Blue = Blue + 10
-    elif pins.digital_read_pin(DigitalPin.P8) == 1 and Blue == 1020:
+    elif pins.digital_read_pin(DigitalPin.P16) == 1 and Blue == 1020:
         Blue = 0
 basic.forever(on_forever)
